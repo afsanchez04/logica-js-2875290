@@ -64,3 +64,91 @@ console.log('La suma de 4 + "6" es ' + resultado + ' por que no puedes sumar un 
 //3+"2"+5+"ocho"
 //al final imprima el resultado en la consola
 
+// Ejemplo de incremento
+let vidas = 5;
+
+vidas++ // Suma uno al valor de vidas (6)
+vidas++ // (7)
+vidas-- // Resta un al valor de vidas (6) 
+vidas-- // (5) 
+
+console.log('Vidas: ' + vidas)
+
+let puntuacion = 0;
+
+puntuacion += 3; //Le suma y le asigna el valor especificado a la variable. 3 se suma a 0
+puntuacion += 5; //puntuacion vale 8
+puntuacion -= 3; //Le resta y le asigna el valor especificado a la variable. 3 se resta a 8
+
+console.log('Puntuación: ' + puntuacion)
+
+
+// == compara solo valor
+// === compara valor y tipo de dato
+
+Boolean(5 < 2) //??? false
+Boolean( "pedro" == "jose") //????? false
+Boolean( 3 == 3 ) ///true
+Boolean( 3 == "3" ) ///true
+Boolean( 3 === "3" ) ///false
+Boolean( 3 == "tres" ) ///false
+Boolean( "pedro" === "Pedro") //? false
+
+// != compara solo valor
+// !== compara valor y tipo de dato
+Boolean( 3 != "3" ) ///false
+Boolean( 3 !== "3" ) ///true
+
+//Operadores lógicos
+
+let altura = 170;
+let velocidad = 30;
+
+let velocidadUsuario = 36
+let alturaUsuario = 169
+
+//&& (y) : ambas condiciones tienen que ser vedaderas
+
+//             false                       true
+Boolean( alturaUsuario >= altura && velocidadUsuario >= velocidad) //false
+
+// let altura = 170;
+// let velocidad = 30;
+velocidadUsuario = 21
+alturaUsuario = 190
+
+//             true                       false
+Boolean( alturaUsuario >= altura && velocidadUsuario >= velocidad) //false
+
+
+// let altura = 170;
+// let velocidad = 30;
+velocidadUsuario = 80
+alturaUsuario = 190
+
+//             true                       true
+Boolean( alturaUsuario >= altura && velocidadUsuario >= velocidad) //true
+
+
+
+
+
+// || (o) : una de las condiciones tienen que ser vedadera
+
+// let altura = 170;
+// let velocidad = 30;
+velocidadUsuario = 21
+alturaUsuario = 190
+
+//             true                       false
+Boolean( alturaUsuario >= altura || velocidadUsuario >= velocidad) //true
+
+// let altura = 170;
+// let velocidad = 30;
+velocidadUsuario = 21
+alturaUsuario = 120
+
+//             false                       false
+Boolean( alturaUsuario >= altura || velocidadUsuario >= velocidad) //false
+
+// coerción: transformar un tipo de dato a otro
